@@ -51,7 +51,7 @@ ii. Terminal behavior:
 | 2         | 3         | True               | Prints "meow"  |
 | ...       | ...       | ...                | ...            |
 | ∞         | 3         | Always True        | Infinite "meow"|
-
+```mermaid
 graph TD
     A([Start]) --> B["i = 0"]
     B --> C{"i < 3 ?"}
@@ -59,5 +59,11 @@ graph TD
     D --> E["i += 1"]
     E --> C
     C -- False --> F([Stop])
-
+```
     
+| Iteration | i Value | Condition | Action       | Next i Value |
+|-----------|---------|-----------|-------------|-------------|
+| 1         | 0       | 0 < 3 ✓  | Prints meow | 1           |
+| 2         | 1       | 1 < 3 ✓  | Prints meow | 2           |
+| 3         | 2       | 2 < 3 ✓  | Prints meow | 3           |
+| 4         | 3       | 3 < 3 ✗  | Loop exits  |             |
