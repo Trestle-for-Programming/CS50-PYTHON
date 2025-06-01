@@ -23,3 +23,12 @@ range(start, stop, step)
      print(seq)
      
      ```
+2. Using Python range() with list()
+   - You could also use the range function as an argument to a list in which case it would result in a list of numbers with a length equal to the stop value as shown below:
+
+    ```
+     list(range(10))
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    len(list(range(10)))
+    10
+    ```
