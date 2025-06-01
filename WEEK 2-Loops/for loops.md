@@ -13,3 +13,25 @@ for i in[0,1,2]:
 for i in range(3):
     print("meow")
 ```
+Notice how range(3) provides back three values (0, 1, and 2) automatically. This code will execute and produce the intended effect, meowing three times.
+
+- Our code can be further improved. Notice how we never use i explicitly in our code. That is, while Python needs the i as a place to store the number of the iteration of the loop, we never use it for any other purpose. In Python, if such a variable does not have any other significance in our code, we can simply represent this variable as a single underscore _. Therefore, you can modify your code as follows:
+```
+for _ in range(3):
+print("meow")
+```
+- Notice how changing the i to _ has zero impact on the functioning of our program.
+- Our code can be further improved. To stretch your mind to the possibilities within Python, consider the following code:
+
+```
+print("meow" * 3)
+```
+
+- Notice how it will meow three times, but the program will produce meowmeowmeow as the result. Consider: How could you create a line break at the end of each meow?
+- Indeed, you can edit your code as follows:
+
+```
+print("meow\n" * 3, end="")
+```
+
+##### Notice how this code produces three meows, each on a separate line. By adding end="" and the \n we tell the interpreter to add a line break at the end of each meow.
